@@ -1,0 +1,14 @@
+.row, [class*='row-']
+  display: flex
+  flex-wrap: wrap
+  margin: 0 (-$gutter-width / 2)
+  align-items: flex-start
+  flex: 1
+
+@each $breakpoint, $prefix in $breakpoints
+  @media (min-width: $breakpoint)
+    @for $i from 1 through $columns
+      .row#{$prefix}-#{$i} > .col
+        flex: 0 0 ($i * 100% / $columns)
+    .row#{$prefix}-auto > .col
+      flex: 1

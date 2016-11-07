@@ -1,0 +1,13 @@
+.col, [class*='col-']
+  flex: 1
+  padding: 0 ($gutter-width / 2) ($gutter-width) ($gutter-width / 2)
+
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      @for $i from 1 through $columns
+          &> .col#{$prefix}-#{$i}
+            flex: 0 0 ($i * 100% / $columns)
+      .col#{$prefix}-auto
+        flex: 1
+

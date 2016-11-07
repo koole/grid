@@ -1,0 +1,32 @@
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-align-vert-start
+        align-items: flex-start
+
+      &.#{$prefix}-align-vert-center
+        align-items: center
+
+      &.#{$prefix}-align-vert-end
+        align-items: flex-end
+
+      &.#{$prefix}-align-hor-start
+        justify-content: flex-start
+
+      &.#{$prefix}-align-hor-center
+        justify-content: center
+
+      &.#{$prefix}-align-hor-end
+        justify-content: flex-end
+
+.col, [class*='col-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-align-vert-start
+        align-self: flex-start
+
+      &.#{$prefix}-align-vert-center
+        align-self: center
+
+      &.#{$prefix}-align-vert-end
+        align-self: flex-end

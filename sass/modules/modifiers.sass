@@ -1,0 +1,32 @@
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-no-gutter
+        margin: 0
+        > .col, [class*='col-']
+          padding: 0
+          margin: 0
+      &.#{$prefix}-no-gutter-hor
+        margin: 0
+        > .col, [class*='col-']
+          padding: 0 0 $gutter-width 0
+      &.#{$prefix}-no-gutter-vert
+        margin: 0 (-$gutter-width / 2)
+        > .col, [class*='col-']
+          padding: 0 ($gutter-width / 2) 0 ($gutter-width / 2)
+      &.#{$prefix}-stretch
+        > .col, > [class*='col-']
+          display: flex
+          align-self: stretch
+      &.#{$prefix}-no-gutter-bottom
+        margin-bottom: -$gutter-width
+        > .col, [class*='col-']
+      &.#{$prefix}-gutter
+        margin: 0 (-$gutter-width / 2)
+
+.col, [class*='col-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-stretch
+        display: flex
+        align-self: stretch

@@ -1,0 +1,8 @@
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-order-row
+        flex-direction: row
+
+      &.#{$prefix}-order-row-reverse
+        flex-direction: row-reverse

@@ -1,0 +1,12 @@
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      @for $i from 0 through $columns
+          &> .#{$prefix}-offset-left-#{$i}, [class*='row-'] > .#{$prefix}-offset-left-#{$i}
+            margin-left: $i * 100% / $columns
+          &> .#{$prefix}-offset-right-#{$i}, [class*='row-'] > .#{$prefix}-offset-right-#{$i}
+            margin-right: $i * 100% / $columns
+      &> .#{$prefix}-offset-left-full
+        margin-left: auto
+      &> .#{$prefix}-offset-right-full
+        margin-right: auto

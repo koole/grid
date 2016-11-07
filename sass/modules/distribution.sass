@@ -1,0 +1,8 @@
+.row, [class*='row-']
+  @each $breakpoint, $prefix in $breakpoints
+    @media (min-width: $breakpoint)
+      &.#{$prefix}-distribute-around
+        justify-content: space-around
+
+      &.#{$prefix}-distribute-between
+        justify-content: space-between
