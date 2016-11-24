@@ -10,6 +10,5 @@
     @for $i from 1 through $columns
       .row#{$prefix}-#{$i} > .col
         flex: 0 0 ($i * 100% / $columns)
-        max-width: ($i * 100% / $columns)
     .row#{$prefix}-auto > .col
       flex: 1
