@@ -6,7 +6,7 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.row, [class*='row-'] {
+.row, [class^='row-'] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
