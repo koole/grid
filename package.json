@@ -1,6 +1,6 @@
 {
   "name": "thegrid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Responsive flexbox grid, a digital frontier...",
   "style": "dist/grid.css",
   "main": "sass/grid.sass",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/LeonKoole/grid.git"
+    "url": "git://github.com/koole/grid.git"
   },
   "keywords": [
     "grid",
@@ -20,9 +20,9 @@
   "author": "Leon Koole <leon@koole.io> (https://koole.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LeonKoole/grid/issues"
+    "url": "https://github.com/koole/grid/issues"
   },
-  "homepage": "https://koole.io/grid",
+  "homepage": "https://grid.koole.io/",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

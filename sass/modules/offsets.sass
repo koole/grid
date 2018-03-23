@@ -1,11 +1,11 @@
 .row, [class*='row-']
-  @each $breakpoint, $prefix in $breakpoints
+  @each $breakpoint, $prefix in $grid-breakpoints
     @media (min-width: $breakpoint)
-      @for $i from 0 through $columns
+      @for $i from 0 through $grid-columns
           &> .#{$prefix}-offset-left-#{$i}, [class*='row-'] > .#{$prefix}-offset-left-#{$i}
-            margin-left: $i * 100% / $columns
+            margin-left: $i * 100% / $grid-columns
           &> .#{$prefix}-offset-right-#{$i}, [class*='row-'] > .#{$prefix}-offset-right-#{$i}
-            margin-right: $i * 100% / $columns
+            margin-right: $i * 100% / $grid-columns
       &> .#{$prefix}-offset-left-full
         margin-left: auto
       &> .#{$prefix}-offset-right-full

@@ -1,5 +1,5 @@
 .row, [class*='row-']
-  @each $breakpoint, $prefix in $breakpoints
+  @each $breakpoint, $prefix in $grid-breakpoints
     @media (min-width: $breakpoint)
       &.#{$prefix}-distribute-around
         justify-content: space-around

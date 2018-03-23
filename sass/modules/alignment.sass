@@ -1,5 +1,5 @@
 .row, [class*='row-']
-  @each $breakpoint, $prefix in $breakpoints
+  @each $breakpoint, $prefix in $grid-breakpoints
     @media (min-width: $breakpoint)
       &.#{$prefix}-align-vert-start
         align-items: flex-start
@@ -20,7 +20,7 @@
         justify-content: flex-end
 
 .col, [class*='col-']
-  @each $breakpoint, $prefix in $breakpoints
+  @each $breakpoint, $prefix in $grid-breakpoints
     @media (min-width: $breakpoint)
       &.#{$prefix}-align-vert-start
         align-self: flex-start

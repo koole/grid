@@ -1,5 +1,5 @@
 .row, [class*='row-']
-  @each $breakpoint, $prefix in $breakpoints
+  @each $breakpoint, $prefix in $grid-breakpoints
     @media (min-width: $breakpoint)
       &.#{$prefix}-order-row
         flex-direction: row
