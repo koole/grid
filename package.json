@@ -1,6 +1,6 @@
 {
   "name": "thegrid",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Responsive flexbox grid, a digital frontier...",
   "style": "dist/grid.css",
   "main": "sass/grid.sass",
