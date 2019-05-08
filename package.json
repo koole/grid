@@ -25,7 +25,7 @@
   "homepage": "https://grid.koole.io/",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-csso": "^3.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
