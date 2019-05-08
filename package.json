@@ -5,6 +5,7 @@
   "style": "dist/grid.css",
   "main": "sass/grid.sass",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
