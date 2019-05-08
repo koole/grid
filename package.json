@@ -28,6 +28,6 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.2"
   }
 }
