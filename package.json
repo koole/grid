@@ -27,7 +27,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-csso": "^3.0.1",
+    "gulp-csso": "^4.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2"
   }
